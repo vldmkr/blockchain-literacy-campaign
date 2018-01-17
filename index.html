@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+  <title>big</title>
+  <link href='big.css' rel='stylesheet' type='text/css' />
+  <link href='highlight.css' rel='stylesheet' type='text/css' />
+  <style>
+    .new-shiny { background: #aaaaaa; }
+  </style>
+  <script src='big.js'></script>
+  <script src='highlight.js'></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class='light'>
+  <div><p><em>blockchain</em> literacy campaign</p>
+</div>
+<div><p><a href="https://anders.com/blockchain/hash.html">Blockchain Demo</a></p>
+</div>
+<div><p><em>Hash</em> - репрезентация входных данных в виде уникальной строки фиксированной длины</p>
+</div>
+<div><p><em>Nonce</em> - одноразовый код, выбранный случайным образом</p>
+</div>
+<div><p><em>Difficulty</em> - это мера того, как трудно найти <em>хэш</em> ниже заданной цели</p>
+</div>
+<div><p><em>Token</em> - расчетная единица в децентрализованных системах</p>
+</div>
+<div><p><em>Coinbase</em> - значение генерирующей транзакции</p>
+</div>
+<div><p><em>Smart contract</em> (тех.) - алгоритм выполняемый на <em>VM</em> конкретной децентрализованной системы</p>
+</div>
+<div><p><em>VM</em> - программная система позволяющая выполнять целевой код в изолированных процессах абстрагируясь от аппаратной реализации</p>
+</div>
+<div><p><em>SCRIPT</em> - используемый в <em>Bitcoin</em> скриптовый язык. Основан на стеке, не является Тьюринг-полным</p>
+</div>
+<div><p><em>pay-to-pubkey-hash</em></p>
+<pre><code>&lt;sig&gt;
+&lt;pubKey&gt;
+
+OP_DUP
+OP_HASH160
+&lt;pubKeyHash&gt;
+OP_EQUALVERIFY
+OP_CHECKSIG
+</code></pre></div>
+<div><p>язык, используемый в <em>EVM</em> имеет конечный автомат и функцию рекурсивной отправки сообщений</p>
+</div>
+<div><pre><code>PUSH1            JUMPDEST 
+0                PUSH1
+CALLDATALOAD     32
+SLOAD            CALLDATALOAD
+NOT              PUSH1
+PUSH1            0
+9                CALLDATALOAD
+JUMPI            SSTORE
+STOP
+</code></pre></div>
+<div><p><em>Solidity</em> - высокоуровневый язык ориентированный на разработку контрактов, исполняющихся на <em>EVM</em>, транслируются в байткод <em>EVM</em></p>
+</div>
+<div><pre><code>contract SimpleStorage {
+  uint256 public value;
+
+  function setValue(uint256 _value) public {
+    value = _value;
+  }
+}
+</code></pre></div>
+<div><p><em>THX</em></p>
+<p>Buy Bitcoins</p>
+</div>
+</body>
+</html>
